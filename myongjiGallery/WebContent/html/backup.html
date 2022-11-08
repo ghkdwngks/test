@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="loginStyle.css">
+  <title>Myongji Gallery</title>
+</head>
+
+<body>
+  <div class="login_form">
+    <section class="signup-wrapper">
+      <div class="logo">
+        <img src="img\logo2.png" alt="">
+      </div>
+      <div class="login_box">
+        <form id="login" method="post" action="#">
+          <button style="color: #fff;">학생</button>
+          <button style="color: #fff;">교직원</button>
+          <button style="color: #fff;">산업체</button>
+        </form>
+            <table border="1" bgcolor="white" bordercolor="black">
+              <tr>
+                <td>아이디 :</td>
+                <td><input type="text" name="id" maxlength="12" size="15" /></td>
+              </tr>
+              <tr>
+                <td>이름 :</td>
+                <td><input type="text" name="name" maxlength="12" size="15" /></td>
+              </tr>
+              <tr>
+                <td>비밀번호 :</td>
+                <td><input type="password" name="pass" maxlength="10" size="15" /></td>
+              </tr>
+              <tr>
+                <td>성별 :</td>
+                <td><input type="radio" name="gender" value="male" checked />남
+                  <input type="radio" name="gender" value="female" />여
+                </td>
+              </tr>
+              <tr>
+                <td>휴대전화 :</td>
+                <td>
+                  <input type="text" name="tell1" size="12" maxlength="12" />
+                </td>
+              </tr>
+            </table>
+        <form id="login" method="post" action="#" class="signup">
+          <button style="color: #fff;">확인</button>
+          <button type="button" style="color: #fff;" onclick="location.href='index.html'">로그인하기</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html, .login_form {
+  height: 100%;
+}
+
+body, p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, select, button, code, label, em {
+  font-family: 'NanumGothic', '돋움', 'Dotum', '나눔고딕', 'AppleGothic', 'sans-serif';
+  color: #666666;
+  font-size: 16px;
+  word-break: break-all;
+  font-weight: normal;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+input {
+  vertical-align: center;
+}
+
+.login_form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: center;
+  -moz-box-flex: center;
+  -webkit-flex: center;
+  -ms-flex: center;
+  flex: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.login-wrapper {
+  max-width: 500px;
+  width: 100%;
+  margin-top: -50px;
+}
+
+.login_box {
+  border: 1px solid #3a72ac;
+  background: #fff;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  max-width: 250px;
+  width: 100%;
+  margin: 1em auto 2em;
+}
+
+.signup-wrapper {
+  max-width: 500px;
+  width: 100%;
+  margin-top: -100px;
+}
+
+form {
+  padding: 2em 1em;
+  font-family: helvetica, sans-serif;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+form label {
+  margin: 0 3% 0.25em;
+  display: block;
+  font-family: helvetica, sans-serif;
+}
+
+form input {
+  width: 94%;
+  padding: 0.5em 0.25em;
+  margin: 0 3% 1.5em;
+  font-size: 1.2em;
+  border: 2px solid #000;
+  outline: none;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+form input.password {
+  padding-right: 4rem;
+}
+
+form input:focus {
+  border: 2px solid #3a72ac;
+}
+
+form button {
+  width: 26.5%;
+  margin: 1px 3% 0;
+  border: none;
+  background: #002b5c;
+  padding: 0.7em 0;
+  font-size: 1.25em;
+  clear: both;
+  color: #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  outline: none;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+form button:focus, form button:hover {
+  background: #3a72ac;
+}
+
+.hide-show {
+  width: 94%;
+  margin: -3.62em 3% 0 1.5%;
+  position: relative;
+  z-index: 5;
+  display: none;
+}
+
+.hide-show span {
+  background: #002b5c;
+  font-size: 1em;
+  padding: 0.5em;
+  float: right;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup {
+  padding: 0em 1em 2em 1em;
+  text-align: center;
+}
+
+/*div변경과 관련된 코드입니다.
+색 등의 디자인은 보이기 위해서 표시해놨으니
+스타일 추가 및 변경이 가능합니다.*/
+.main input[type=radio] {
+  display: none;
+}
+
+#tab-1:checked~.tab label:nth-child(1),
+#tab-2:checked~.tab label:nth-child(2),
+#tab-3:checked~.tab label:nth-child(3),
+#tab-4:checked~.tab label:nth-child(4) {
+  color: #002b5c;
+  border-bottom: solid #002b5c;
+  box-shadow: none;
+}
+
+.content>div {
+  display: none;
+}
+
+#tab-1:checked~.content div:nth-child(1),
+#tab-2:checked~.content div:nth-child(2),
+#tab-3:checked~.content div:nth-child(3),
+#tab-4:checked~.content div:nth-child(4) {
+  display: block;
+}
+
+.main {
+  margin: 0 auto;
+  main-width: 1380px;
+  max-width: 100%;
+  padding: 2em 1em 0em 1em;
+  font-family: helvetica, sans-serif;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tab label {
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+  display: inline-block;
+  width: 32.65%;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #999;
+}
+
+.content {
+  min-height: 250px;
+}
+
+.content>div {
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.init_area {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.init_area th {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  padding: 10px 35px 10px 10px;
+  background: url(https://member.mjc.ac.kr/images/common/bul_type03.gif) no-repeat 0 19px;
+}
+
+.init_area td {
+    position: relative;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.init_area td input {
+    border: 1px solid #d7d7d7;
+    background: #fafafa;
+    width: 100%;
+    padding: 7px 0 7px 5px;
+}
